@@ -1,0 +1,119 @@
+:root {
+    --color-dark-bg: #1e293b;        /* Fondo oscuro principal */
+    --color-card-bg: #2d3848;        /* Fondo de la tarjeta */
+    --color-text-light: #f1f5f9;     /* Texto principal claro */
+    --color-text-secondary: #94a3b8; /* Texto gris de apoyo */
+    --color-primary-green: #10b981;  /* Verde principal (Botón) */
+    --border-radius-base: 0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.login-card { /* Usamos login-card en lugar de register-card */
+    background-color: var(--color-card-bg);
+    padding: 2.5rem;
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    max-width: 400px; 
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color-primary-green);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.login-card h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-text-light);
+}
+
+
+
+.input-group {
+    margin-bottom: 1.2rem; 
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-dark-bg);
+    border-radius: var(--border-radius-base);
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: var(--color-primary-green);
+    outline: none;
+}
+
+/* ------------------- Botón Principal ------------------- */
+
+.btn-primary {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-primary-green);
+    color: var(--color-dark-bg);
+    border: none;
+    border-radius: var(--border-radius-base);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #059669; 
+}
+
+
+
+.links {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.links a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--color-primary-green);
+}
