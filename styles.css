@@ -267,4 +267,30 @@ body {
 .history-react { background-color: #61dafb; color: black; }
 .history-python { background-color: var(--color-yellow-tag); color: black; }
 .history-mobx { background-color: #e54c00; color: white; }
+
 .history-figma { background-color: #a259ff; color: white; }
+
+.app-header {
+    display: flex;
+    justify-content: space-between; /* Separa logo, buscador y botón */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-card-bg, #2d3848); /* Fallback por si la variable no carga */
+}
+/* Estilo del botón de Cerrar Sesión */
+.btn-logout {
+    background-color: transparent;
+    color: #ef4444; 
+    border: 1px solid #ef4444;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 1rem;
+}
+
+.btn-logout:hover {
+    background-color: #ef4444;
+    color: white;
+}
